@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(18, 0, 48);
+        }
+        div{
+            background-color: rgb(20, 1, 50);
+            width: 30%;
+            height: 40%;
+            box-shadow: 0 0 20px 2px rgb(67, 45, 102);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 40px;
+            border-radius: 5px;
+            color: white;
+        }
+        div input{
+            border: none;
+            outline: none;
+            background: transparent;
+            display: block;
+            border-bottom: 1px solid rgb(71, 71, 71);
+            width: 90%;
+            margin: 40px 0;
+        }
+        div button{
+            background-color: rgb(20, 1, 50);
+            color: white;
+            outline: none;
+            border: none;
+            box-shadow: 0 0 5px 1px rgb(67, 45, 102) ;
+            padding: 10px 10px;
+            border-radius: 30px;
+            width: 80px;
+        }
+        input::placeholder{
+            font-size: medium;
+        }
+        h1{
+            padding-left: 25%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Login Page</h1>
+        <form action="">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>

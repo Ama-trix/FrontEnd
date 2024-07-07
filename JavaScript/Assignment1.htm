@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        div{
+            width: 180px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="a">This is india</h1>
+    <button onclick="rst()">Change</button>
+    <hr>
+    <div>
+        <div>
+            <h1 id="b">This is KISHAN</h1>
+            <button onclick="pqr()">Change</button>
+            </div>
+            <div>
+                <h1 id="c">This is INCAPP</h1>
+            <button onclick="abc()">Change</button>
+            </div>
+    </div>
+    <button onclick="xyx()">Alert</button>
+</body>
+<script>
+    function xyx(){
+        alert('hello Incapp');
+    }
+    function abc(){
+        var a =document.getElementById('c');
+        a.innerHTML="We love INDIA";
+    }
+    function pqr(){
+        var b=document.getElementById('b');
+        b.innerHTML="HEY KISHAN";
+    }
+    function rst(){
+        var c=document.getElementById('a');
+        c.innerHTML="WHATS UP?";
+    }
+</script>
+</html>
