@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Simple Interest App</h1>
+    <hr>
+    <label for="">Enter the Principle Amount</label>
+    <input type="number" id="p">
+    <br>
+    <label for="">Enter the Rate</label>
+    <input type="number" id="r">
+    <br>
+    <label for="">Enter the Time</label>
+    <input type="number" id="t">
+    <br>
+    <button onclick="f()">Find</button>
+    <p id="para"></p>
+</body>
+<script>
+    function f(){
+        var p=parseInt(document.getElementById("p").value);
+        var r=parseInt(document.getElementById("r").value);
+        var t=parseInt(document.getElementById("t").value);
+        var si=(p*r*t)/100;
+        var para=document.getElementById("para");
+        para.innerHTML= "The Simple interest is "+si;
+    }
+</script>
+</html>

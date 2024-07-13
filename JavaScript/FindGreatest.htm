@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Greatest Number</title>
+</head>
+
+<body>
+    <h1>Find the Greatest Number</h1>
+    <label for="number1">Enter first number:</label>
+    <input type="number" id="number1"><br>
+    <label for="number2">Enter second number:</label>
+    <input type="number" id="number2"><br>
+    <label for="number3">Enter third number:</label>
+    <input type="number" id="number3"><br>
+    <label for="number4">Enter fourth number:</label>
+    <input type="number" id="number4"><br>
+    <button onclick="findGreatest()">Find Greatest</button>
+    <p id="result"></p>
+
+
+</body>
+<script>
+    function findGreatest() {
+        
+    let number1 = parseFloat(document.getElementById('number1').value);
+    let number2 = parseFloat(document.getElementById('number2').value);
+    let number3 = parseFloat(document.getElementById('number3').value);
+    let number4 = parseFloat(document.getElementById('number4').value);
+
+    let greatest = Math.max(number1, number2, number3, number4);
+
+    document.getElementById('result').innerText = 'The greatest number is ' + greatest;
+}
+
+</script>
+
+</html>

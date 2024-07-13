@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Find Day:-</h1>
+    <input type="number" name="" id="n1" placeholder="Enter your number">
+    <button onclick="f()">Find Day</button>
+    <p id="para"></p>
+</body>
+<script>
+    function f(){
+        var n=parseInt(document.getElementById("n1").value);
+        var p=document.getElementById("para");
+        switch(n){
+            case 1: 
+                p.innerHTML="Sunday";
+                break;
+            case 2:
+                p.innerHTML="Monday";
+                break;
+            case 3:
+                p.innerHTML="Tuesday";
+                break;
+            case 4:
+                p.innerHTML="Wednesday";
+                break;
+            case 5:
+                p.innerHTML="Thursday";
+                break;
+            case 6:
+                p.innerHTML="Friday";
+                break;
+            case 7:
+                p.innerHTML="Saturday";
+                break;
+        }
+    }
+</script>
+</html>

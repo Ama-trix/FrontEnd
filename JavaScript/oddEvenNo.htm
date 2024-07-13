@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Even or Odd Number</h1>
+    <hr>
+    <input id="num" type="number" placeholder="Enter the number">
+    <button onclick="f()">Find</button>
+    <p id="para"></p>
+</body>
+<script>
+    function f(){
+        var a=parseInt(document.getElementById("num").value);
+        var p=document.getElementById("para");
+        if(a%2==0){
+            p.innerHTML=a+" is Even.";
+        }else{
+            p.innerHTML=a+" is Odd.";
+        }
+    }
+</script>
+</html>

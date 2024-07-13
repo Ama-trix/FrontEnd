@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add Two Numbers</h1>
+    <hr>
+    <input type="number" name="" id="num1">
+    <input type="number" name="" id="num2">
+    <button onclick="f()">Add</button>
+    <p id="para"></p>
+</body>
+<script>
+    function f(){
+        var n1=parseInt(document.getElementById("num1").value);
+        var n2=parseInt(document.getElementById("num2").value);
+        var a=n1+n2;
+        var p=document.getElementById("para");
+        p.innerHTML=n1+" + "+n2 +"="+a;
+    }   
+</script>
+</html>

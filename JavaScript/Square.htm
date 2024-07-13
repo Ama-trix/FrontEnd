@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Calculator</title>
+</head>
+<body>
+    <h1>Square Calculator</h1>
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput">
+    <button onclick="calculateSquare()">Calculate Square</button>
+    <p id="result"></p>
+
+   
+</body>
+<script>
+   function calculateSquare() {
+    let number = document.getElementById('numberInput').value;
+
+    let square = number * number;
+    document.getElementById('result').innerText = 'The square of ' + number + ' is ' + square;
+}
+ 
+</script>
+</html>

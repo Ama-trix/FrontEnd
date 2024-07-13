@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Sum Of Digits Between Two Numbers Assignment</h1>
+<hr>
+<input type="number" name="" id="n1">
+<input type="number" name="" id="n2">
+<button onclick="f()">Go</button>
+<p id="para"></p>
+</body>
+<script>
+    function f(){
+        var n1=parseInt(document.getElementById("n1").value);
+        var n2=parseInt(document.getElementById("n2").value);
+        var data=0;
+        for(var i=n1+1;i<n2;i++){
+            data=data+i;
+        }
+        var p=document.getElementById("para");
+        p.innerHTML="Sum"+data;
+    }
+</script>
+</html>

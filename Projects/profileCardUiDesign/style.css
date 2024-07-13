@@ -1,0 +1,20 @@
+@import url("https://fonts.google.com/share?selection.family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900");
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+section{
+    margin: 50px 50px;
+    background-color: blue;
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fbackground-design&psig=AOvVaw2cn3JCedm7fqZ_3-icPrkc&ust=1720665059985000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIiov4C3m4cDFQAAAAAdAAAAABAE");
+}
+div img{
+    height: 400px;
+    width: 600px;
+}
+div{
+    display: inline-block;
+    background-color: white;
+    height: 80%;
+}
